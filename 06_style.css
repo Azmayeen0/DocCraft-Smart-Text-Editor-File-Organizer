@@ -1,0 +1,64 @@
+#Container {
+    margin-bottom: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: flex;
+}
+
+#breadCrumb {
+    border-radius: 5px;
+    color: solid black;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: flex;
+}
+
+.path {
+    background-color: khaki;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px;
+    border-right: 3px solid black;
+}
+
+.path:hover {
+    background-color: grey;
+    color: blue;
+    cursor: pointer;
+    transform: scale(1.03);
+    text-decoration: underline;
+}
+
+.folder {
+    background-color: teal;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+#myFirstButton {
+    background-color: rgb(154, 150, 78);
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    width: 100px;
+    margin-left: 600px;
+    cursor: pointer;
+}
+
+#myFirstButton:hover {
+    transform: scale(1.03);
+}
+
+.folder [action] {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div[purpose=name] {
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+}
