@@ -1,12 +1,85 @@
 <html>
     <head>
-        <title>My first WebDev Project</title>
-        <link rel="StyleSheet" href="03_style.css">
+        <title>Word-Pad</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href = "style.css"/>
     </head>
-
     <body>
-        <h1>My First hands on WebDev </h1>
-        <button id="myButton">Color</button>
-        <script type="text/javascript" src="02_main.js"></script>
+        <div id = "Header"> 
+            <button id ="addFolder">Add Folder</button>
+            <button id ="addTextFile">Add Text File</button>
+        </div>
+        
+
+        <div id = "Breadcrumb">
+            <a purpose="Path" rid="-1">Root</a>
+        </div>
+
+        <div id = "container">
+        </div>
+    
+        <div id = "app">
+            <div id="app-title-bar">
+                <div id="app-title">Title will come here</div>
+                <div id="win-actions"> 
+                    <span class="material-icons">maximize</span>
+                    <span class="material-icons">fullscreen</span>
+                    <span class="material-icons">close</span>
+                </div>
+            </div>
+            <div id="app-menu-bar">
+                <span>save</span>
+            </div>
+            <div id="app-body">
+
+            </div>
+        </div>
+
+        <template id = "templates">
+            <div class="folder" rid="" pid ="">
+                <span action="rename">rename</span>
+                <span action="delete">delete</span>
+                <span action="view">view</span>
+                <div purpose="name"></div>
+            </div>
+            <div class="text-file" rid="" pid ="">
+                <span action="rename">rename</span>
+                <span action="delete">delete</span>
+                <span action="view">view</span>
+                <div purpose="name"></div>
+            </div>
+            <a purpose="Path" rid="-1"></a>
+            <div purpose="notepad-menu" class="notepad-menu">
+                <span actoin="save" class="material-icons">save</span>  
+                <span pressed="false"  actoin="bold" class="material-icons">format_bold</span>
+                <span pressed="false" actoin="italic" class="material-icons">format_italic</span>
+                <span pressed="false" actoin="underline" class="material-icons">format_underline</span>
+                <input type="colour" action="bg-color" />
+                <input type="colour" action="fg-color" />
+
+                <select action="font-family">
+                    <option value="monospace">monospace</option>
+                    <option value="serif">serif</option>
+                    <option value="sans-serif">sans-serif</option>
+                    <option value="cursive">cursive</option>
+                </select>
+
+                <select action="font-size">
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="22">22</option>
+                </select>
+
+            </div>
+            <div purpose="notepad-body" class="notepad-body">
+                <textarea>I am the notepad's body</textarea>
+            </div>
+        </template>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
